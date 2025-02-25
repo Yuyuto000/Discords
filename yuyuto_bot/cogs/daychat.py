@@ -14,7 +14,7 @@ class DayChatCog(commands.Cog):
     async def daychat(self, interaction: discord.Interaction):
         # チャンネルの初期化（24時間固定）
         channel_id = interaction.channel_id
-        now = datetime.utcnow()
+        now = datetime.now(datetime.timezone.utc)
         end_time = now + timedelta(hours=24)
         self.active_channels[channel_id] = end_time
 
