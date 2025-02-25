@@ -12,9 +12,9 @@ async def on_ready():
     print(f"{bot.user}（イケメンBot）としてログインしました！")
 
     async def load_cogs():
-        for filename in os.listdir("./cool_bot/cogs"):
+        for filename in os.listdir("./yuyuto_bot/cogs"):
             if filename.endswith(".py"):
-                await bot.load_extension(f"cool_bot.cogs.{filename[:-3]}")
+                await bot.load_extension(f"yuyuto_bot.cogs.{filename[:-3]}")
 
                 async def run_cool_bot():
                     await load_cogs()

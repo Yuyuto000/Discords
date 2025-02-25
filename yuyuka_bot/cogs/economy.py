@@ -5,7 +5,7 @@ import json
 import os
 import random
 
-DATA_FILE = "cute_bot/data/cute_users.json"
+DATA_FILE = "yuyuka_bot/data/bot_users.json"
 
 def load_data():
     if os.path.exists(DATA_FILE):
