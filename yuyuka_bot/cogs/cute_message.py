@@ -16,3 +16,4 @@ class CuteMessage(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(CuteMessage(bot))
+    await bot.tree.sync()

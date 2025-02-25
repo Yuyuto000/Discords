@@ -21,3 +21,4 @@ class CuteAnimals(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(CuteAnimals(bot))
+    await bot.tree.sync()

@@ -9,10 +9,10 @@ class CuteCatHealing(commands.Cog):
     @commands.command(name="cat_heal", help="癒しの猫ちゃんが登場！")
     async def cat_heal(self, ctx):
         healing_words = [
-            "にゃんにゃん、あなたはとっても素敵な人だよ！😽",
-            "にゃん！ゆっくり休んでね。癒されてね🐾",
-            "わたしがずっとそばにいるから、安心してね！🐱",
-            "にゃーん、あなたに良いことが訪れますように✨"
+            "にゃー、今日も元気だよ！ただし、夜中の静けさが大好きなだけだにゃ！🌙",
+            "お昼寝中に、ぬくぬくと幸せな夢を見たんだ！😺✨",
+            "にゃんこは知ってる、愛されるためにすりすりするのが一番だって！🐾",
+            "もっとおやつちょうだい、だってわたしはおねだり名人だからにゃ～🍪"
         ]
         gifs = [
             "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
@@ -26,3 +26,4 @@ class CuteCatHealing(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(CuteCatHealing(bot))
+    await bot.tree.sync()

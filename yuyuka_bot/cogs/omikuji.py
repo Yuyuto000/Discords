@@ -43,3 +43,4 @@ class OmikujiCog(discord.ext.commands.Cog):
 # ボットでロードする際のエントリーポイント
 async def setup(bot):
     await bot.add_cog(OmikujiCog(bot))
+    await bot.tree.sync()

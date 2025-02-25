@@ -55,3 +55,4 @@ class ResponseCog(commands.Cog):
 # ボットの初期化
 async def setup(bot):
     await bot.add_cog(ResponseCog(bot))
+    await bot.tree.sync()

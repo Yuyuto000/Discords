@@ -14,3 +14,4 @@ class Dice(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(Dice(bot))
+    await bot.tree.sync()

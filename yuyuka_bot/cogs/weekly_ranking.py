@@ -47,3 +47,4 @@ class WeeklyRanking(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(WeeklyRanking(bot))
+    await bot.tree.sync()

@@ -17,3 +17,4 @@ class Magic8Ball(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(Magic8Ball(bot))
+    await bot.tree.sync()

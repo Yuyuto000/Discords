@@ -18,3 +18,4 @@ class HealingBGM(commands.Cog):
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(HealingBGM(bot))
+    await bot.tree.sync()
